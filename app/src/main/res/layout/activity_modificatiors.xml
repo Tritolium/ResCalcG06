@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificatiorsActivity">
+
+    <Button
+        android:id="@+id/multi_silver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_silver"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/multi_gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_gold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_gold"
+        app:layout_constraintTop_toBottomOf="@id/multi_silver"
+        app:layout_constraintBottom_toTopOf="@id/multi_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_black"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_black"
+        app:layout_constraintTop_toBottomOf="@id/multi_gold"
+        app:layout_constraintBottom_toTopOf="@id/multi_brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_brown"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_brown"
+        app:layout_constraintTop_toBottomOf="@id/multi_black"
+        app:layout_constraintBottom_toTopOf="@id/multi_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_red"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_red"
+        app:layout_constraintTop_toBottomOf="@id/multi_brown"
+        app:layout_constraintBottom_toTopOf="@id/multi_orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_orange"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_orange"
+        app:layout_constraintTop_toBottomOf="@id/multi_red"
+        app:layout_constraintBottom_toTopOf="@id/multi_yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_yellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_yellow"
+        app:layout_constraintTop_toBottomOf="@id/multi_orange"
+        app:layout_constraintBottom_toTopOf="@id/multi_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_green"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_green"
+        app:layout_constraintTop_toBottomOf="@id/multi_yellow"
+        app:layout_constraintBottom_toTopOf="@id/multi_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_blue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_blue"
+        app:layout_constraintTop_toBottomOf="@id/multi_green"
+        app:layout_constraintBottom_toTopOf="@id/multi_violet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_violet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_violet"
+        app:layout_constraintTop_toBottomOf="@id/multi_blue"
+        app:layout_constraintBottom_toTopOf="@id/multi_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_grey"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_grey"
+        app:layout_constraintTop_toBottomOf="@id/multi_violet"
+        app:layout_constraintBottom_toTopOf="@id/multi_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/multi_white"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/left_border"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_white"
+        app:layout_constraintTop_toBottomOf="@id/multi_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tol_silver"/>
+
+    <Button
+        android:id="@+id/tol_silver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_silver"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tol_gold"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/tol_gold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_gold"
+        app:layout_constraintTop_toBottomOf="@id/tol_silver"
+        app:layout_constraintBottom_toTopOf="@id/tol_brown"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/tol_brown"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_brown"
+        app:layout_constraintTop_toBottomOf="@id/tol_gold"
+        app:layout_constraintBottom_toTopOf="@id/tol_red"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/tol_red"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_red"
+        app:layout_constraintTop_toBottomOf="@id/tol_brown"
+        app:layout_constraintBottom_toTopOf="@id/tol_green"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/tol_green"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_green"
+        app:layout_constraintTop_toBottomOf="@id/tol_red"
+        app:layout_constraintBottom_toTopOf="@id/tol_blue"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/tol_blue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_blue"
+        app:layout_constraintTop_toBottomOf="@id/tol_green"
+        app:layout_constraintBottom_toTopOf="@id/tol_violet"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/tol_violet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_violet"
+        app:layout_constraintTop_toBottomOf="@id/tol_blue"
+        app:layout_constraintBottom_toTopOf="@id/tol_grey"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/tol_grey"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/horizontal_distance"
+        android:background="@color/res_grey"
+        app:layout_constraintTop_toBottomOf="@id/tol_violet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/temp_brown" />
+
+    <Button
+        android:id="@+id/temp_brown"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/right_border"
+        android:background="@color/res_brown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/temp_red"
+        app:layout_constraintStart_toEndOf="@id/tol_silver"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/temp_red"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/right_border"
+        android:background="@color/res_red"
+        app:layout_constraintTop_toBottomOf="@id/temp_brown"
+        app:layout_constraintBottom_toTopOf="@id/temp_orange"
+        app:layout_constraintStart_toEndOf="@id/tol_silver"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/temp_orange"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/right_border"
+        android:background="@color/res_orange"
+        app:layout_constraintTop_toBottomOf="@id/temp_red"
+        app:layout_constraintBottom_toTopOf="@id/temp_yellow"
+        app:layout_constraintStart_toEndOf="@id/tol_silver"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/temp_yellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/right_border"
+        android:background="@color/res_yellow"
+        app:layout_constraintTop_toBottomOf="@id/temp_orange"
+        app:layout_constraintBottom_toTopOf="@id/temp_blue"
+        app:layout_constraintStart_toEndOf="@id/tol_silver"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/temp_blue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/right_border"
+        android:background="@color/res_blue"
+        app:layout_constraintTop_toBottomOf="@id/temp_yellow"
+        app:layout_constraintBottom_toTopOf="@id/temp_violet"
+        app:layout_constraintStart_toEndOf="@id/tol_silver"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/temp_violet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/right_border"
+        android:background="@color/res_violet"
+        app:layout_constraintTop_toBottomOf="@id/temp_blue"
+        app:layout_constraintBottom_toTopOf="@id/temp_white"
+        app:layout_constraintStart_toEndOf="@id/tol_silver"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/temp_white"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@style/vertical_distance"
+        android:layout_marginBottom="@style/vertical_distance"
+        android:layout_marginStart="@style/horizontal_distance"
+        android:layout_marginEnd="@style/right_border"
+        android:background="@color/res_white"
+        app:layout_constraintTop_toBottomOf="@id/temp_violet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tol_silver"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

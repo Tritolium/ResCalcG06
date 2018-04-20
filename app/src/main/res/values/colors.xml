@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="res_calc_background">222222</color>
+    <color name="res_calc_background">#222222</color>
     <color name="res_black">#000000</color>
     <color name="res_grey">#777777</color>
     <color name="res_white">#ffffff</color>
@@ -14,6 +14,6 @@
     <color name="res_green">#008b00</color>
     <color name="res_blue">#0000ff</color>
     <color name="res_violet">#9a32cd</color>
-    <color name="res_gold"></color>
-    <color name="res_silver"></color>
+    <color name="res_gold">#ffff8f</color>
+    <color name="res_silver">#c0c0c0</color>
 </resources>

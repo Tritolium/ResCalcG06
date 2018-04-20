@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">ResCalcG06</string>
-    <string name="input_1">If the resistor has four rows, enter the first two colors. Elsewise the first three</string>
+    <string name="input_1">If the resistor has four bands, enter the first two band-colors. Elsewise the first three</string>
 </resources>
