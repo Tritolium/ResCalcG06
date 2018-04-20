@@ -192,4 +192,22 @@ public class ResCalcG06Activity extends AppCompatActivity {
         btn.setBackgroundColor(getResources().getColor(R.color.res_white));
         third_row = 9;
     }
+
+    public void reset_fr(View view){
+        btn = findViewById(R.id.fr_stat);
+        btn.setBackgroundColor(getResources().getColor(R.color.res_calc_background));
+        first_row = 0;
+    }
+
+    public void reset_sr(View view){
+        btn = findViewById(R.id.sr_stat);
+        btn.setBackgroundColor(getResources().getColor(R.color.res_calc_background));
+        second_row = 0;
+    }
+
+    public void reset_tr(View view){
+        btn = findViewById(R.id.tr_stat);
+        btn.setBackgroundColor(getResources().getColor(R.color.res_calc_background));
+        third_row = 0;
+    }
 }
