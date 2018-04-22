@@ -24,6 +24,7 @@
         android:layout_marginEnd="2dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="0dp"
+        android:background="@color/res_calc_background"
         android:onClick="reset_fr"
         app:layout_constraintBottom_toTopOf="@id/fr_black"
         app:layout_constraintEnd_toStartOf="@id/sr_stat"
@@ -38,6 +39,7 @@
         android:layout_marginEnd="2dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="0dp"
+        android:background="@color/res_calc_background"
         android:onClick="reset_sr"
         app:layout_constraintBottom_toTopOf="@id/sr_black"
         app:layout_constraintEnd_toStartOf="@id/tr_stat"
@@ -52,6 +54,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="0dp"
+        android:background="@color/res_calc_background"
         android:onClick="reset_tr"
         app:layout_constraintBottom_toTopOf="@id/fr_black"
         app:layout_constraintEnd_toStartOf="@id/multi_stat"
@@ -62,15 +65,16 @@
         android:id="@+id/multi_stat"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/res_calc_background"
         android:onClick="reset_multi"
         app:layout_constraintBottom_toTopOf="@id/fr_black"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
         android:id="@+id/fr_black"
@@ -525,432 +529,434 @@
         android:id="@+id/multi_silver"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_silver"
         android:onClick="multi_silver"
         app:layout_constraintBottom_toTopOf="@id/multi_gold"
-        app:layout_constraintTop_toBottomOf="@id/multi_stat"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_stat" />
 
     <Button
         android:id="@+id/multi_gold"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_gold"
         android:onClick="multi_gold"
         app:layout_constraintBottom_toTopOf="@id/multi_black"
-        app:layout_constraintTop_toBottomOf="@id/multi_silver"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_silver" />
 
     <Button
         android:id="@+id/multi_black"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_black"
         android:onClick="multi_black"
         app:layout_constraintBottom_toTopOf="@id/multi_brown"
-        app:layout_constraintTop_toBottomOf="@id/multi_gold"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_gold" />
 
     <Button
         android:id="@+id/multi_brown"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_brown"
         android:onClick="multi_brown"
         app:layout_constraintBottom_toTopOf="@id/multi_red"
-        app:layout_constraintTop_toBottomOf="@id/multi_black"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_black" />
 
     <Button
         android:id="@+id/multi_red"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_red"
         android:onClick="multi_red"
         app:layout_constraintBottom_toTopOf="@id/multi_orange"
-        app:layout_constraintTop_toBottomOf="@id/multi_brown"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_brown" />
 
     <Button
         android:id="@+id/multi_orange"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_orange"
         android:onClick="multi_orange"
         app:layout_constraintBottom_toTopOf="@id/multi_yellow"
-        app:layout_constraintTop_toBottomOf="@id/multi_red"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_red" />
 
     <Button
         android:id="@+id/multi_yellow"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_yellow"
         android:onClick="multi_yellow"
         app:layout_constraintBottom_toTopOf="@id/multi_green"
-        app:layout_constraintTop_toBottomOf="@id/multi_orange"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_orange" />
 
     <Button
         android:id="@+id/multi_green"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_green"
         android:onClick="multi_green"
         app:layout_constraintBottom_toTopOf="@id/multi_blue"
-        app:layout_constraintTop_toBottomOf="@id/multi_yellow"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_yellow" />
 
     <Button
         android:id="@+id/multi_blue"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_blue"
         android:onClick="multi_blue"
         app:layout_constraintBottom_toTopOf="@id/multi_violet"
-        app:layout_constraintTop_toBottomOf="@id/multi_green"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_green" />
 
     <Button
         android:id="@+id/multi_violet"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_violet"
         android:onClick="multi_violet"
         app:layout_constraintBottom_toTopOf="@id/multi_grey"
-        app:layout_constraintTop_toBottomOf="@id/multi_blue"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_blue" />
 
     <Button
         android:id="@+id/multi_grey"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_grey"
         android:onClick="multi_grey"
         app:layout_constraintBottom_toTopOf="@id/multi_white"
-        app:layout_constraintTop_toBottomOf="@id/multi_violet"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_violet" />
 
     <Button
         android:id="@+id/multi_white"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_white"
         android:onClick="multi_white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/multi_grey"
+        app:layout_constraintEnd_toStartOf="@id/tol_stat"
         app:layout_constraintStart_toEndOf="@id/tr_stat"
-        app:layout_constraintEnd_toStartOf="@id/tol_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/multi_grey" />
 
     <Button
         android:id="@+id/tol_stat"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/res_calc_background"
         android:onClick="reset_tol"
         app:layout_constraintBottom_toTopOf="@id/tol_silver"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
         android:id="@+id/tol_silver"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_silver"
         android:onClick="tol_silver"
-        app:layout_constraintTop_toBottomOf="@id/tol_stat"
         app:layout_constraintBottom_toTopOf="@id/tol_gold"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_stat" />
 
     <Button
         android:id="@+id/tol_gold"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_gold"
         android:onClick="tol_gold"
-        app:layout_constraintTop_toBottomOf="@id/tol_silver"
         app:layout_constraintBottom_toTopOf="@id/tol_brown"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_silver" />
 
     <Button
         android:id="@+id/tol_brown"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_brown"
         android:onClick="tol_brown"
         app:layout_constraintBottom_toTopOf="@id/tol_red"
-        app:layout_constraintTop_toBottomOf="@id/tol_gold"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_gold" />
 
     <Button
         android:id="@+id/tol_red"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_red"
         android:onClick="tol_red"
         app:layout_constraintBottom_toTopOf="@id/tol_green"
-        app:layout_constraintTop_toBottomOf="@id/tol_brown"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_brown" />
 
     <Button
         android:id="@+id/tol_green"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_green"
         android:onClick="tol_green"
         app:layout_constraintBottom_toTopOf="@id/tol_blue"
-        app:layout_constraintTop_toBottomOf="@id/tol_red"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_red" />
 
     <Button
         android:id="@+id/tol_blue"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_blue"
         android:onClick="tol_blue"
         app:layout_constraintBottom_toTopOf="@id/tol_violet"
-        app:layout_constraintTop_toBottomOf="@id/tol_green"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_green" />
 
     <Button
         android:id="@+id/tol_violet"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_violet"
         android:onClick="tol_violet"
         app:layout_constraintBottom_toTopOf="@id/tol_grey"
-        app:layout_constraintTop_toBottomOf="@id/tol_blue"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_blue" />
 
     <Button
         android:id="@+id/tol_grey"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_grey"
         android:onClick="tol_grey"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tol_violet"
+        app:layout_constraintEnd_toStartOf="@id/temp_stat"
         app:layout_constraintStart_toEndOf="@id/multi_stat"
-        app:layout_constraintEnd_toStartOf="@id/temp_stat"/>
+        app:layout_constraintTop_toBottomOf="@id/tol_violet" />
 
     <Button
         android:id="@+id/temp_stat"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
-        android:onClick="reset_tol"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/res_calc_background"
+        android:onClick="reset_temp"
         app:layout_constraintBottom_toTopOf="@id/temp_brown"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
         android:id="@+id/temp_brown"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_brown"
         android:onClick="temp_brown"
         app:layout_constraintBottom_toTopOf="@id/temp_red"
-        app:layout_constraintTop_toBottomOf="@id/temp_stat"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/temp_stat" />
 
     <Button
         android:id="@+id/temp_red"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_red"
         android:onClick="temp_red"
         app:layout_constraintBottom_toTopOf="@id/temp_orange"
-        app:layout_constraintTop_toBottomOf="@id/temp_brown"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/temp_brown" />
 
     <Button
         android:id="@+id/temp_orange"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_orange"
         android:onClick="temp_orange"
         app:layout_constraintBottom_toTopOf="@id/temp_yellow"
-        app:layout_constraintTop_toBottomOf="@id/temp_red"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/temp_red" />
 
     <Button
         android:id="@+id/temp_yellow"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_yellow"
         android:onClick="temp_yellow"
         app:layout_constraintBottom_toTopOf="@id/temp_blue"
-        app:layout_constraintTop_toBottomOf="@id/temp_orange"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/temp_orange" />
 
     <Button
         android:id="@+id/temp_blue"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_blue"
         android:onClick="temp_blue"
         app:layout_constraintBottom_toTopOf="@id/temp_violet"
-        app:layout_constraintTop_toBottomOf="@id/temp_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/temp_yellow" />
 
     <Button
         android:id="@+id/temp_violet"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_violet"
         android:onClick="temp_violet"
         app:layout_constraintBottom_toTopOf="@id/temp_white"
-        app:layout_constraintTop_toBottomOf="@id/temp_blue"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/temp_blue" />
 
     <Button
         android:id="@+id/temp_white"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_marginStart="2dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
         android:background="@color/res_white"
         android:onClick="temp_white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/temp_violet"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tol_stat"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/temp_violet" />
 </android.support.constraint.ConstraintLayout>

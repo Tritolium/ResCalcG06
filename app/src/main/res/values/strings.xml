@@ -1,4 +1,31 @@
 <resources>
     <string name="app_name">ResCalcG06</string>
     <string name="input_1">If the resistor has four bands, enter the first two band-colors. Elsewise the first three</string>
+    <string name="multi_silver">x0,01\u2126</string>
+    <string name="multi_gold">x0,1\u2126</string>
+    <string name="multi_brown">x1\u2126</string>
+    <string name="multi_black">x10\u2126</string>
+    <string name="multi_red">x100\u2126</string>
+    <string name="multi_orange">x1k\u2126</string>
+    <string name="multi_yellow">x10k\u2126</string>
+    <string name="multi_green">x100k\u2126</string>
+    <string name="multi_blue">x1M\u2126</string>
+    <string name="multi_violet">x10M\u2126</string>
+    <string name="multi_grey">x100M\u2126</string>
+    <string name="multi_white">1G\u2126</string>
+    <string name="tol_silver">\u00b110,0\u0025</string>
+    <string name="tol_gold">\u00b15,0\u0025</string>
+    <string name="tol_brown">\u00b11,0\u0025</string>
+    <string name="tol_red">\u00b12,0\u0025</string>
+    <string name="tol_green">\u00b10,5\u0025</string>
+    <string name="tol_blue">\u00b10,25\u0025</string>
+    <string name="tol_violet">\u00b10,1\u0025</string>
+    <string name="tol_grey">\u00b10,05\u0025</string>
+    <string name="temp_brown">100</string>
+    <string name="temp_red">50</string>
+    <string name="temp_orange">15</string>
+    <string name="temp_yellow">25</string>
+    <string name="temp_blue">10</string>
+    <string name="temp_violet">5</string>
+    <string name="temp_white">1</string>
 </resources>
