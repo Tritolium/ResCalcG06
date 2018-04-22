@@ -461,7 +461,7 @@ public class ResCalcG06Activity extends AppCompatActivity {
     private void updateStatus(){
         if(text == null)
             text = findViewById(R.id.textView);
-        String status = first_row + second_row + third_row + multi + tol + temp;
+        String status = "" + first_row + second_row + third_row + multi + tol + temp;
         text.setText(status);
     }
 }
