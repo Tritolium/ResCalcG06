@@ -11,9 +11,11 @@ public class ResCalcG06Activity extends AppCompatActivity {
     private Button btn;
     private TextView text = null;
 
-    private int first_row;
-    private int second_row;
-    private int third_row;
+    String status;
+
+    private Integer first_row;
+    private Integer second_row;
+    private Integer third_row;
     private String multi;
     private String tol;
     private String temp;
@@ -22,6 +24,10 @@ public class ResCalcG06Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res_calc_g06);
+
+        multi = "";
+        tol = "";
+        temp = "";
     }
 
     public void fr_brown(View view){
@@ -419,21 +425,21 @@ public class ResCalcG06Activity extends AppCompatActivity {
     public void reset_fr(View view){
         btn = findViewById(R.id.fr_stat);
         btn.setBackgroundColor(getResources().getColor(R.color.res_calc_background));
-        first_row = 0;
+        first_row = null;
         updateStatus();
     }
 
     public void reset_sr(View view){
         btn = findViewById(R.id.sr_stat);
         btn.setBackgroundColor(getResources().getColor(R.color.res_calc_background));
-        second_row = 0;
+        second_row = null;
         updateStatus();
     }
 
     public void reset_tr(View view){
         btn = findViewById(R.id.tr_stat);
         btn.setBackgroundColor(getResources().getColor(R.color.res_calc_background));
-        third_row = 0;
+        third_row = null;
         updateStatus();
     }
 
@@ -461,7 +467,14 @@ public class ResCalcG06Activity extends AppCompatActivity {
     private void updateStatus(){
         if(text == null)
             text = findViewById(R.id.textView);
-        String status = "" + first_row + second_row + third_row + multi + tol + temp;
+        status = "";
+        if(first_row != null)
+            status += first_row;
+        if(second_row != null)
+            status += second_row;
+        if(third_row != null)
+            status += third_row;
+        status += multi + tol + temp;
         text.setText(status);
     }
 }
